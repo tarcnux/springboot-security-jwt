@@ -47,3 +47,7 @@ POST http://localhost:8080/login
 
 ### Decodificar o Token
 https://jwt.io/
+
+## Acesso a endpoints protegidos /users e /managers
+GET http://localhost:8080/users
+GET http://localhost:8080/managers
