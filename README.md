@@ -1,4 +1,4 @@
-# springboot-security-jwt
+# [springboot-security-jwt](https://github.com/digitalinnovationone/dio-springboot/tree/main/dio-spring-security-jwt)
 Um singelo exemplo de uso de Spring Securiyt com Token JWT com Springboot
 
 
@@ -22,3 +22,16 @@ Um singelo exemplo de uso de Spring Securiyt com Token JWT com Springboot
 | SwaggerConfig | Classe responsável pela documentação da API |
 | JWTObject     | Classe que representa um Objeto correspondente a estrutura JWT |
 | JWTCreator    | Classe responsável por gerar o Token com base no Objeto e ou instanciar o Objeto JWT com base no Token |
+
+## Cadastrar Usuário
+POST http://localhost:8080/users
+
+{
+    "name":"Tarcísio Nunes", 
+    "username":"tarcnux", 
+    "password":"qwerty",
+    "roles":["USERS","MANAGERS"]
+}
+
+### Consulta cadastro de usuário no BD
+http://localhost:8080/h2-console/
