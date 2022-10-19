@@ -25,13 +25,25 @@ Um singelo exemplo de uso de Spring Securiyt com Token JWT com Springboot
 
 ## Cadastrar Usuário
 POST http://localhost:8080/users
-
+```
 {
     "name":"Tarcísio Nunes", 
     "username":"tarcnux", 
     "password":"qwerty",
     "roles":["USERS","MANAGERS"]
 }
-
+```
 ### Consulta cadastro de usuário no BD
 http://localhost:8080/h2-console/
+
+## Efetuar o Login
+POST http://localhost:8080/login
+```
+{    
+    "username":"tarcnux", 
+    "password":"qwerty"
+}
+```
+
+### Decodificar o Token
+https://jwt.io/
